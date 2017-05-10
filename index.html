@@ -5,7 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>豆瓣一刻</title>
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./public/less/main.css">
+
+	<!-- build:css ./public/css/main.css -->
+	<link rel="stylesheet" href="./public/less/main.less">
+	<!-- endbuild -->
 </head>
 <body ng-app="Yike">
 	<div class="viewport">
@@ -44,14 +47,20 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- build:js ./public/libs/angular.min.js -->
 	<!-- <script src="./public/libs/toggle.js"></script> -->
 	<script src="./bower_components/angular/angular.js"></script>
 	<script src="./bower_components/angular-route/angular-route.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:js ./scripts/app.js -->
 	<!-- AngularJS入口 -->
 	<script src="./scripts/app.js"></script>
 	<!-- 控制器模块 -->
 	<script src="./scripts/controllers.js"></script>
 	<!-- 指令模块 -->
 	<script src="./scripts/directives.js"></script>
+	<!-- endbuild -->
 </body>
 </html>
